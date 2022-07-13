@@ -434,9 +434,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* .jobs-li + .jobs-li {
-  margin-left: 30px;
-} */
 .jobs-li {
   width: 370px;
   height: 404px;
@@ -444,6 +441,12 @@ body {
   margin-bottom: 30px;
 
   border: 1px solid #eeeeee;
+  cursor: pointer;
+}
+
+.jobs-li:hover{
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .jobs-li:nth-child(3n) {

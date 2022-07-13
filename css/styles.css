@@ -75,9 +75,7 @@ body {
   margin-left: auto;
 }
 
-.icon-contact-text{
-  width: ;
-}
+
 
 .links-nav {
   display: flex;
@@ -120,9 +118,13 @@ body {
 }
 
 .links-contact-text:hover,
-.links-contact-text:focus {
+.links-contact-text:focus, 
+.links-contact-text:hover #icon-email,
+.links-contact-text:focus #icon-email{
   color: var(--accent-color);
 }
+
+
 
 .visited {
   color: var(--accent-color);

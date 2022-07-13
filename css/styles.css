@@ -75,8 +75,6 @@ body {
   margin-left: auto;
 }
 
-
-
 .links-nav {
   display: flex;
   margin-left: 94px;
@@ -107,6 +105,10 @@ body {
   color: var(--accent-color);
 }
 
+.icon-contact-text:hover {
+  fill: var(--accent-color);
+}
+
 .links-contact-text {
   display: block;
   padding-top: 32px;
@@ -118,13 +120,9 @@ body {
 }
 
 .links-contact-text:hover,
-.links-contact-text:focus, 
-.links-contact-text:hover #icon-email,
-.links-contact-text:focus #icon-email{
+.links-contact-text:focus {
   color: var(--accent-color);
 }
-
-
 
 .visited {
   color: var(--accent-color);

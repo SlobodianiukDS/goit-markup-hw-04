@@ -105,8 +105,17 @@ body {
   color: var(--accent-color);
 }
 
-.icon-contact-text:hover {
+.links-nav-marg:hover .links-contact-text,
+.links-nav-marg:focus .links-contact-text,
+.links-nav-marg:hover .icon-contact-text,
+.links-nav-marg:focus .icon-contact-text {
+  color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+.icon-contact-text {
+  fill: var(--title-text-color);
+  margin-right: 10px;
 }
 
 .links-contact-text {
@@ -140,6 +149,10 @@ body {
 .section-hero {
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: url(../images/Overlay.png), url(../images/backgroud.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .title {
@@ -154,7 +167,7 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--prymary-white-color);
-  background-color: var(--background-color-night);
+  /* background-color: var(--background-color-night); */
   letter-spacing: 0.06em;
 }
 
@@ -216,6 +229,13 @@ body {
   width: 270px;
 }
 
+.icon-benefit {
+  background-color: var(--background-color-grey);
+  padding: 25px 100px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .benefits-tittle {
   font-weight: 700;
   line-height: 1.14;
@@ -235,6 +255,7 @@ body {
 /* section3 */
 
 .section-galery {
+  padding: 0;
   padding-bottom: 94px;
 }
 
@@ -268,6 +289,45 @@ body {
 .section-teams {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.social-networks {
+  display: flex;
+}
+
+.box-social-networks {
+  padding: 0 32px;
+}
+
+.soc-list {
+  background-color: none;
+}
+
+.soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.soc-link:hover .icon-soc-link,
+.soc-link:focus .icon-soc-link,
+.soc-link:hover,
+.soc-link:focus {
+  fill: var(--prymary-white-color);
+  background-color: var(--accent-color);
+}
+
+.icon-soc-link {
+  width: 22px;
+  height: 22px;
+  fill: #afb1b8;
+  margin-top: 4px;
+}
+
+.soc-list + .soc-list {
+  margin-left: 10px;
 }
 
 .box-teams {
@@ -318,10 +378,54 @@ body {
 }
 
 .teams-text {
+  margin-bottom: 16px;
+
   color: var(--title-text-color);
 }
 
 /*========== section4 ==========*/
+/*========== section5 ==========*/
+
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title-client {
+  text-align: center;
+  margin-bottom: 48px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.clients {
+  display: flex;
+}
+
+.clients-list {
+  /* width: 175px; */
+}
+
+.clients-list + .clients-list {
+  margin-left: 30px;
+}
+
+.clients-btn {
+  width: calc((100%-150px) / 6);
+  display: block;
+  background-color: #188ce8;
+}
+
+.icon-clients-link {
+  fill: var(--title-text-color);
+  height: 42px;
+  width: 100px;
+}
+
+/*========== section5 ==========*/
 /*========== main ==========*/
 
 /* ========== footer ==========*/
@@ -444,9 +548,10 @@ body {
   cursor: pointer;
 }
 
-.jobs-li:hover{
-  border: 1px solid #EEEEEE;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.jobs-li:hover {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .jobs-li:nth-child(3n) {
@@ -477,3 +582,32 @@ body {
 }
 
 /* ========= portfolio ==========*/
+.trysoc-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: #2196f3;
+}
+
+.trysoc-btn {
+  width: 44px;
+  height: 44px;
+  background-color: #2196f3;
+}
+
+.tryicon-soc-link {
+  width: 22px;
+  height: 22px;
+}
+
+.qwe {
+  display: flex;
+}
+.asd {
+}
+.zxc {
+}
+.poi {
+}
+.lkj {
+}

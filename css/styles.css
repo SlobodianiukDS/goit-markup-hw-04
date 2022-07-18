@@ -464,6 +464,7 @@ body {
 
 .box-social-networks-foot {
   margin-left: 70px;
+  margin-top: 16px;
 }
 
 .logo-half-foot {
@@ -515,6 +516,9 @@ body {
 
 .soc-add-foot {
   fill: var(--prymary-white-color);
+}
+
+.soc-add-foot-bgc {
   background-color: rgba(255, 255, 255, 0.1);
 }
 

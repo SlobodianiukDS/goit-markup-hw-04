@@ -431,11 +431,12 @@ body {
 }
 
 .clients-btn:hover,
-.clients-btn:focus,
+.clients-btn:focus {
+  border: 1px solid var(--accent-color);
+}
 .clients-btn:hover .icon-clients-link,
 .clients-btn:focus .icon-clients-link {
-  border: #2196f3;
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 /*========== section5 ==========*/

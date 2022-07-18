@@ -66,9 +66,6 @@ body {
 /* logo */
 
 /* навигация */
-.header {
-  /* background-color: #2196f3; */
-}
 
 .links-contact {
   display: flex;
@@ -538,7 +535,6 @@ body {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
 .filter-btn {

@@ -223,12 +223,15 @@ body {
 }
 
 .benefits-li {
-  width: 270px;
+  width: calc((100%-90px)/4);
 }
 
 .icon-benefit {
+
+}
+
+.box-icon-benefit{
   background-color: var(--background-color-grey);
-  padding: 25px 100px;
   border-radius: 4px;
   margin-bottom: 30px;
 }

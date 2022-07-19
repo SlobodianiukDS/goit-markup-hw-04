@@ -312,8 +312,6 @@ body {
 
   border-radius: 50%;
   background-color: var(--prymary-white-color);
-
-  cursor: pointer;
 }
 
 .icon-soc-link {
@@ -428,8 +426,6 @@ body {
   background-color: #ffffff;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-
-  cursor: pointer;
 }
 
 .icon-clients-link {

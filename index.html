@@ -26,7 +26,10 @@
           >
           <ul class="links-nav">
             <li class="links-nav-marg">
-              <a class="links-nav-text visited" href="./index.html">Студия</a>
+              <a class="links-nav-text visited" href="./index.html"
+                >Студия
+                <div class="visited-line"></div
+              ></a>
             </li>
             <li class="links-nav-marg">
               <a class="links-nav-text" href="./portfolio.html">Портфолио</a>
@@ -61,7 +64,9 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button data-modal-open class="button" type="button">
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -126,31 +131,40 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work">
             <li class="work-li">
-              <img
-                src="./images/programms1.jpg"
-                alt="programms"
-                class="work-img"
-                width="370"
-                height="294"
-              />
+              <div class="box-work-img">
+                <img
+                  src="./images/programms1.jpg"
+                  alt="programms"
+                  class="work-img"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-img-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="work-li">
-              <img
-                src="./images/adaptation2.jpg"
-                alt="adaptation"
-                class="work-img"
-                width="370"
-                height="294"
-              />
+              <div class="box-work-img">
+                <img
+                  src="./images/adaptation2.jpg"
+                  alt="adaptation"
+                  class="work-img"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-img-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="work-li">
-              <img
-                src="./images/choose_color3.jpg"
-                alt="choose_color"
-                class="work-img"
-                width="370"
-                height="294"
-              />
+              <div class="box-work-img">
+                <img
+                  src="./images/choose_color3.jpg"
+                  alt="choose_color"
+                  class="work-img"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-img-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -465,5 +479,11 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="modal is-hidden">
+      <div class="modal-form">
+        <button data-modal-close class="modal-close-bt" type="button">x</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

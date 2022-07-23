@@ -47,11 +47,18 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
+}
+
+.logo-first {
   color: var(--accent-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-half {
   color: #000000;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover .logo-first,
@@ -95,6 +102,8 @@ body {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--prymary-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links-nav-text:hover,
@@ -102,17 +111,11 @@ body {
   color: var(--accent-color);
 }
 
-.links-nav-marg:hover .links-contact-text,
-.links-nav-marg:focus .links-contact-text,
-.links-nav-marg:hover .icon-contact-text,
-.links-nav-marg:focus .icon-contact-text {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
 .icon-contact-text {
   fill: var(--title-text-color);
   margin-right: 10px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links-contact-text {
@@ -124,11 +127,16 @@ body {
   font-weight: 500;
   line-height: 1.142;
   color: var(--title-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.links-contact-text:hover,
-.links-contact-text:focus {
+.links-nav-marg:hover .links-contact-text,
+.links-nav-marg:focus .links-contact-text,
+.links-nav-marg:hover .icon-contact-text,
+.links-nav-marg:focus .icon-contact-text {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .visited {
@@ -165,7 +173,6 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--prymary-white-color);
-  /* background-color: var(--background-color-night); */
   letter-spacing: 0.06em;
 }
 
@@ -186,8 +193,11 @@ body {
   background-color: var(--accent-color);
   border-radius: 4px;
   letter-spacing: 0.06em;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -314,6 +324,8 @@ body {
 
   border-radius: 50%;
   background-color: var(--prymary-white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-soc-link {
@@ -321,13 +333,17 @@ body {
   height: 20px;
 
   fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link:hover .icon-soc-link,
-.soc-link:focus .icon-soc-link,
+.soc-link:focus .icon-soc-link {
+  fill: var(--prymary-white-color);
+}
+
 .soc-link:hover,
 .soc-link:focus {
-  fill: var(--prymary-white-color);
   background-color: var(--accent-color);
 }
 
@@ -427,12 +443,16 @@ body {
   background-color: #ffffff;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-clients-link {
   fill: #afb1b8;
   height: 60px;
   width: 106px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -468,6 +488,8 @@ body {
 
 .logo-half-foot {
   color: var(--prymary-white-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover .logo-half-foot,
@@ -487,6 +509,8 @@ body {
   padding-bottom: 4px;
 
   color: var(--prymary-white-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link {
@@ -496,7 +520,8 @@ body {
   padding-bottom: 4px;
 
   color: var(--title-white-color);
-  /* background-color: var(--background-color-night); */
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover,
@@ -553,8 +578,12 @@ body {
   background-color: var(--background-color-grey);
   border-radius: 4px;
   letter-spacing: 0.03em;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filt-btn-marg + .filt-btn-marg {
@@ -589,12 +618,14 @@ body {
   margin-bottom: 30px;
 
   border: 1px solid #eeeeee;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0),
+    0px 0px 0px rgba(0, 0, 0, 0);
 
   cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .jobs-li:hover {
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
